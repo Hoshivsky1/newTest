@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <title>Test Tusk</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- HEADER PAGE -->
+        <header class="header">
+            <div class="header__block">
+                <h1 class="header__title">Dashboard intro title</h1>
+                <h2 class="header__subtitle">Ac vulputate purus semper fusce at. Non dolor in cras.</h2>
+            </div>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#">
+                            <img src="./assets/header/1.svg" alt="Compare">
+                            <h3>Compare</h3>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#">
+                            <img src="./assets/header/2.svg" alt="Managers">
+                            <h3>Managers</h3>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#">
+                            <img src="./assets/header/3.svg" alt="Employees">
+                            <h3>Employees</h3>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- END HEADER PAGE -->
+
+        <section class="col">
+            <!-- RLQ BLOCK -->
+            <div class="container">
+                <div class="container__header">
+                    <h3 class="container__title">RLQ</h3>
+                    <img class="container__info-icon" src="./assets/icons/info.svg" title="Info" alt="info">
+                </div>
+                <div class="rlq__content">
+                    <div class="rlq__lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="wave__info">
+                        <div class="wave-container">
+                            <div class="wave"></div>
+                        </div>
+                        <div class="rlq__info">
+                            <h3 class="rlq__title">59,47%</h3>
+                            <span class="rlq__subtitle">
+                                <img src="./assets/icons/human.svg" alt="humans">
+                                56 884
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END RLQ BLOCK -->
+
+            <!-- KI BLOCK -->
+            <div class="container">
+                <div class="container__header">
+                    <h3 class="container__title">KI</h3>
+                    <img class="container__info-icon" src="./assets/icons/info.svg" title="Info" alt="info">
+                </div>
+                <div class="ki__content">
+                    <canvas id="gaugeChart"></canvas>
+                    <div class="guageNumber">
+                        <span>0</span>
+                        <span>100</span>
+                    </div>
+                </div>
+            </div>
+            <!-- END KI BLOCK -->
+
+            <!-- MZI BLOCK -->
+            <div class="container">
+                <div class="container__header">
+                    <h3 class="container__title">MZI</h3>
+                    <img class="container__info-icon" src="./assets/icons/info.svg" title="Info" alt="info">
+                </div>
+            </div>
+            <!-- END MZI BLOCK -->
+
+            <!-- SURVEY TOPICS BLOCK -->
+            <div class="container">
+                <div class="container__header">
+                    <h3 class="container__title">Survey Topics</h3>
+                    <img class="container__info-icon" src="./assets/icons/info.svg" title="Info" alt="info">
+                </div>
+            </div>
+            <!-- END SURVEY TOPICS BLOCK -->
+        </section>
+
+        <section class="col">
+            <!-- Survey Topics Scores BLOCK -->
+            <div class="container">
+                <div class="container__header">
+                    <h3 class="container__title">Survey Topics Scores</h3>
+                    <img class="container__info-icon" src="./assets/icons/info.svg" title="Info" alt="info">
+                </div>
+                <div class="container__chart">
+                    <div class="container__line">
+                        <span class="container__line-label">1</span>
+                        <span class="container__line-label">2</span>
+                        <span class="container__line-label">3</span>
+                        <span class="container__line-label">4</span>
+                        <span class="container__line-label">5</span>
+                    </div>
+                    <div class="container__grid">
+                        <div class="container__bar" style="height: 80%;" title="A: 4"></div>
+                        <div class="container__bar" style="height: 20%;" title="B: 1"></div>
+                        <div class="container__bar" style="height: 40%;" title="C: 2"></div>
+                        <div class="container__bar" style="height: 10%;" title="D: 0.5"></div>
+                        <div class="container__bar" style="height: 5%;" title="E: 0.25"></div>
+                        <div class="container__bar" style="height: 80%;" title="F: 4"></div>
+                        <div class="container__bar" style="height: 100%;" title="G: 5"></div>
+                        <div class="container__bar" style="height: 20%;" title="H: 1"></div>
+                        <div class="container__bar" style="height: 40%;" title="I: 2"></div>
+                        <div class="container__bar" style="height: 80%;" title="J: 4"></div>
+                        <div class="container__bar" style="height: 60%;" title="K: 3"></div>
+                        <div class="container__bar" style="height: 80%;" title="L: 4"></div>
+                    </div>
+                </div>
+                <div class="container__labels">
+                    <span class="container__label">A</span>
+                    <span class="container__label">B</span>
+                    <span class="container__label">C</span>
+                    <span class="container__label">D</span>
+                    <span class="container__label">E</span>
+                    <span class="container__label">F</span>
+                    <span class="container__label">G</span>
+                    <span class="container__label">H</span>
+                    <span class="container__label">I</span>
+                    <span class="container__label">J</span>
+                    <span class="container__label">K</span>
+                    <span class="container__label">L</span>
+                </div>
+            </div>
+            <!-- END Survey Topics Scores BLOCK -->
+
+            <!-- KPI BLOCK -->
+            <div class="container">
+                <div class="container__header">
+                    <h3 class="container__title">KPs</h3>
+                    <img class="container__info-icon" src="./assets/icons/info.svg" title="Info" alt="info">
+                </div>
+                <div class="container__chart">
+                    <div class="container__line">
+                        <span class="container__line-label">0</span>
+                        <span class="container__line-label">25%</span>
+                        <span class="container__line-label">50%</span>
+                        <span class="container__line-label">75%</span>
+                        <span class="container__line-label">100%</span>
+                    </div>
+                    <div class="container__grid ml-46">
+                        <div class="container__bar" style="height: 85%; background-color: #5155C3; " title="A: 4"></div>
+                        <div class="container__bar" style="height: 70%; background-color: #597DBE;" title="B: 1"></div>
+                        <div class="container__bar" style="height: 40%; background-color: #5F99BB;" title="C: 2"></div>
+                        <div class="container__bar" style="height: 10%; background-color: #65B8B7;" title="D: 0.5">
+                        </div>
+                        <div class="container__bar" style="height: 67%; background-color: #6CDDB1;" title="E: 0.25">
+                        </div>
+                    </div>
+                </div>
+                <div class="container__labels ml-70">
+                    <span class="container__label">KP 1</span>
+                    <span class="container__label">KP 2</span>
+                    <span class="container__label">KP 3</span>
+                    <span class="container__label">KP 4</span>
+                    <span class="container__label">KP 2</span>
+                </div>
+
+                <ul class="kps__list">
+                    <li class="kps__item">
+                        <span></span>
+                        <h4>KP 1</h4>
+                    </li>
+                    <li class="kps__item">
+                        <span></span>
+                        <h4>KP 2</h4>
+                    </li>
+                    <li class="kps__item">
+                        <span></span>
+                        <h4>KP 3</h4>
+                    </li>
+                    <li class="kps__item">
+                        <span></span>
+                        <h4>KP 4</h4>
+                    </li>
+                    <li class="kps__item">
+                        <span></span>
+                        <h4>KP 5</h4>
+                    </li>
+                    <li class="kps__item">
+                        <span></span>
+                        <h4>KP 6</h4>
+                    </li>
+                </ul>
+            </div>
+            <!-- END KPI BLOCK -->
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./scripts/gaugeChar.js"></script>
+
+</html>
