@@ -46,7 +46,7 @@
         </header>
         <!-- END HEADER PAGE -->
 
-        <section class="col">
+        <section class="col flex-move">
             <!-- RLQ BLOCK -->
             <div class="container">
                 <div class="container__header">
@@ -98,6 +98,12 @@
                     <h3 class="container__title">MZI</h3>
                     <img class="container__info-icon" src="./assets/icons/info.svg" title="Info" alt="info">
                 </div>
+                <div class="emotion-chart">
+                    <div class="arc"></div>
+                    <div class="emotion neutral">😐</div>
+                    <div class="emotion happy">😊</div>
+                    <div class="emotion angry">😠</div>
+                </div>
             </div>
             <!-- END MZI BLOCK -->
 
@@ -105,8 +111,17 @@
             <div class="container">
                 <div class="container__header">
                     <h3 class="container__title">Survey Topics</h3>
-                    <img class="container__info-icon" src="./assets/icons/info.svg" title="Info" alt="info">
                 </div>
+                <ul class="topics__list">
+                    <li class="topics__item"><span>A.</span>Pulvinar iaculis placerat vitae dui</li>
+                    <li class="topics__item"><span>B.</span>Massa morbi mattis lectus ornare</li>
+                    <li class="topics__item"><span>C.</span>Diam sem vestibulum purus morbi</li>
+                    <li class="topics__item"><span>D.</span>Massa morbi mattis lectus ornare</li>
+                    <li class="topics__item"><span>E.</span>Diam sem vestibulum purus morbi</li>
+                    <li class="topics__item"><span>F.</span>Diam sem vestibulum purus morbi</li>
+                    <li class="topics__item"><span>G.</span>Massa morbi mattis lectus ornare</li>
+                    <li class="topics__item"><span>H.</span>Diam sem vestibulum purus morbi</li>
+                </ul>
             </div>
             <!-- END SURVEY TOPICS BLOCK -->
         </section>
@@ -176,10 +191,8 @@
                         <div class="container__bar" style="height: 85%; background-color: #5155C3; " title="A: 4"></div>
                         <div class="container__bar" style="height: 70%; background-color: #597DBE;" title="B: 1"></div>
                         <div class="container__bar" style="height: 40%; background-color: #5F99BB;" title="C: 2"></div>
-                        <div class="container__bar" style="height: 10%; background-color: #65B8B7;" title="D: 0.5">
-                        </div>
-                        <div class="container__bar" style="height: 67%; background-color: #6CDDB1;" title="E: 0.25">
-                        </div>
+                        <div class="container__bar" style="height: 10%; background-color: #65B8B7;" title="D: 0.5"></div>
+                        <div class="container__bar" style="height: 67%; background-color: #6CDDB1;" title="E: 0.25"></div>
                     </div>
                 </div>
                 <div class="container__labels ml-70">
@@ -222,5 +235,6 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./scripts/gaugeChar.js"></script>
+</body>
 
 </html>

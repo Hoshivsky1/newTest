@@ -10,7 +10,6 @@ button{cursor: pointer;}
 button::-moz-focus-inner{padding:0;border:0;}
 a,a:visited{text-decoration: none;}
 a:hover{text-decoration: none;}
-ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
@@ -46,6 +45,7 @@ body {
     background-color: #fff;
     display: flex;
     align-items: center;
+    height: 56px;
 }
 .nav__list{
     display: flex;
@@ -196,7 +196,6 @@ body {
     color: #616E85;
     margin: 0 24px;
     margin-left: 44px;
-    
 }
 
 .container__label {
@@ -342,3 +341,173 @@ body {
     width: 132px !important;
 }
 /* END KI */
+
+/* MZI  */
+.emotion-chart {
+    position: relative;
+    width: 147px;
+    height: 73.5px; /* Half of the width to create a semi-circle */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.emotion-chart .arc {
+    position: absolute;
+    width: 100%;
+    height: 200%; /* Double the height to make a full circle, but only half is visible */
+    border: 15px solid #EFF2F5;
+    border-radius: 50%;
+    top: 5px;
+    left: 0;
+}
+
+.emotion {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+   
+}
+
+.neutral {
+    top: -2px;
+    left: calc(50% - 15px);
+}
+
+.happy {
+    bottom: -5px;
+    right: -4px;
+}
+
+.angry {
+    bottom: -5px;
+    left: -4px;
+}
+/* MZI END */
+
+/* SURVEY TOPICS */
+
+.topics__list{
+    padding: 24px;
+    padding-top: 0px;
+    overflow-y: scroll;
+    max-height: 112px;
+}
+.topics__list::-webkit-scrollbar{
+    width: 4px;
+    background-color: #fff;
+    height: 100%;
+}
+.topics__list::-webkit-scrollbar-thumb{
+    background-color: #D0D6E4;
+    border-radius: 8px;
+}
+.topics__item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 16px 0px;
+    color: #616E85;
+    border-top: 1px solid #e0e0e0;
+}
+.topics__item > span{
+    padding-right: 9px;
+}
+.topics__item::marker {
+    width: 10px;
+    height: 10px;
+    font-weight: bold;
+    color: #616E85;
+    font-size: 14px;
+}
+
+/* SURVEY TOPICS END*/
+
+.flex-move{
+
+}
+
+/* MEDIA SCREEN */
+@media screen and (max-width: 1260px) {
+    .wrapper {
+        padding: 20px;
+    }
+    .container__grid{
+        gap: 14px;
+    }
+    .container__labels {
+        gap: 14px;
+    }
+    .kps__list{
+        gap: 8px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header__block{
+        width: 270px;
+    }
+    .header__title{
+        font-size: 26px;
+    }
+    .header__subtitle{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+@media screen and (max-width: 800px) {
+    .col:last-child {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 760px) {
+    .header__block{
+        display: none;
+    }
+    
+    .flex-move {
+        display: grid;
+            grid-template-columns: 1fr 1fr; /* Два стовпці */
+            grid-template-rows: 1fr 1fr; /* Два рядки */
+            width: 100%;     
+    }
+    .col{
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .header {
+        margin-bottom: 20px;
+    }
+    .header__nav{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 490px) {
+    .wrapper {
+        padding: 20px;
+    }
+    .nav__list{
+        width: 100%;
+        gap: 0px;
+        padding: 0px 3px;
+        justify-content: space-between;
+    }
+    .nav__item{
+        padding: 0px 10px;
+    }
+    .header__nav{
+        height: 45px;
+    }
+    .container__grid {
+        gap: 10px;
+    }
+    .container__labels{
+        gap: 10px;
+    }
+}
